@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Questrial&display=swap');@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Questrial',sans-serif;
+    text-transform: uppercase;
+}
+.ticket{
+    width: 50vw;
+    height: 61vh;
+    background-color: #f3f1c9;
+    border-radius: 10px;
+    border: 2px solid black;
+    /*display: flex;*/
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+    background-color: #f3f1c9;
+    padding: 5px 13px;
+    border-radius: 10px;
+    /*border-right: 2px dashed black;*/
+    
+}
+/*
+.tear{
+    width: 20%;
+    height: 100%;
+    background-color: #f8c9ac;
+    border-radius: 0px 10px 10px 0px;
+}
+    */
+.main{
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: black;
+    gap: 3px;
+    border: 3px solid black;
+}
+.title{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    color: #f3f1c9;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bolder;
+    font-size: 23px;
+    text-align: center;
+}
+.passenger{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: #f3f1c9;
+}
+.depart{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #f3f1c9;
+}
+.arrive{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    background-color: #f3f1c9;
+}
+.date{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #f3f1c9;
+}
+.time{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #f3f1c9;
+}
+.car{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    background-color: #f3f1c9;
+}
+.seat{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    background-color: rgb(243, 241, 201);
+}
+.platform{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    background-color:#c02a28;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    color: #ffebb9;
+    justify-content: center;
+}
+.para
+{
+    font-size: 23px;
+    font-weight: bolder; 
+    height: 50%;
+    text-align: center;
+    width: 100%;
+}
+.number{
+    height: 50%;
+    font-family: "Old Standard TT", serif;
+    display: flex;
+    justify-content: space-around;
+}
+.real{
+    width: 50%;
+    font-size: 80px;
+    text-align: center;
+}
+.fraction{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nume{
+    height: 50%;
+    font-size: 40px;
+    padding-left: 8px;
+    margin-right: 25px;
+    padding-bottom: 52px;
+    border-bottom: 3px solid #ffebb9;
+
+}
+.deno{
+    height: 50%;
+    font-size: 40px;
+    padding-left: 8px;
+
+}
+.description{
+    width: 100%;
+    display: grid;
+    height: 15%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    margin-top: 13px;
+    
+}
+.instructions{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding-right: 12px;
+}
+.icon{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    background-color: black;
+    border-radius: 5px;
+    margin-right: 14px;
+
+}
+.icon-img{
+    width:100%;
+    height:100%;
+    padding: 10px;
+
+}
+.barcode{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.bar{
+    width:100%;
+    height: 60%;
+
+}
+.data{
+    font-family: "Jura", sans-serif;
+}
+.passenger,.depart,.arrive,.date,.time,.car,.seat,.platform{
+    padding: 10px;
+    line-height: 1.5;
+}
+.heading{
+    font-size: small;
+}
+.data{
+    font-size: larger;
+    font-weight: bolder;
+}
+.rules{
+    font-size: small;
+    line-height: 1.2;
+    border-bottom: 1px dotted black;
+    padding-bottom: 3px;
+}
+.board{
+    margin-top: 5px;
+    font-size: 10px;
+    padding-top: 3px;
+}
+.code{
+    font-size: large;
+    font-family: "Jura", sans-serif;
+    text-align: justify;
+    letter-spacing: 8px;
+    font-weight: bold;
+    color: #c02a28;
+}
+/*
+.tear{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.details{
+    height:80%;
+    width:100%;
+    border:3px solid #c02a28;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.t-title{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.t-barcode{
+    padding:10px;
+}
+.t-bar{
+    width:100%;
+    height: 68%;
+}
+.t-code{
+    font-size: large;
+    font-family: "Jura", sans-serif;
+    text-align: justify;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #c02a28;
+}
+    */
