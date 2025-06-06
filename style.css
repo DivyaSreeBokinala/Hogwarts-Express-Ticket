@@ -43,6 +43,7 @@ body{
     border-radius: 0px 10px 10px 0px;
 }
     */
+    
 .main{
     height: 80%;
     display: grid;
@@ -57,11 +58,14 @@ body{
     grid-column-end: 9;
     color: #f3f1c9;
     background-color: black;
+    align-content: center;
+}
+h1{
     font-family: "Montserrat", sans-serif;
     font-weight:bolder;
-    font-size: 23px;
+    font-size: 54px;
     text-align: center;
-    align-content: center;
+
 }
 .passenger{
     grid-column-start: 1;
